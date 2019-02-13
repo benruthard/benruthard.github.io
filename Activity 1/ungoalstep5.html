@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UNGoals 5</title>
+
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flip-box {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-box-front, .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-box-front {
+      background-color: #bbb;
+      color: black;
+    }
+
+    .flip-box-back {
+      background-color: #EB1C2D;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: DodgerBlue;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .flex-container > div {
+      background-color: #f1f1f1;
+      margin: 10px;
+      padding: 20px;
+      font-size: 25px;
+    }
+
+    .center {
+    display: block;  
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    }
+  
+  </style>
+
+</head>
+<body>
+ 
+<picture>
+  <source media="(min-width: 940px)" srcset="images/l1.png">
+  <img class = "center" src="images/l2.png" alt="Flowers" style="width:auto;">
+</picture>
+
+
+<div class = "flex-container">
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+      	<img src="images/photo 01.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #EB1C2D";>
+        <h3>No Poverty</h3>
+        <p>Should minimum wage be raised?</p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 02.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #d3a029";>
+        <h3>Zero Hunger</h3>
+        <p>Are food banks effective?</p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 03.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #279b48";>
+        <h3>Good Health And Well-Being</h3>
+        <p>Are vaccinations effective?</p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 04.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #c31f33";>
+        <h3>Quality Education</h3>
+        <p>How do we ensure those without privilege have equal access to quality education and oppurtunity?</p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 05.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #ef402b";>
+        <h3>Gender Equality</h3>
+        <p>Does gender responsive financing of basic education lead to gender equality at that level of education?</p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 06.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #00aed9";>
+        <h3>Clean Water And Sanitation</h3>
+        <p>How can we provide clean water and sanitation for developing countries around the world?</p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 07.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #fdb713";>
+        <h3>Affordable And Clean Energy</h3>
+        <p>How can we have more people access modern energy?</p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 08.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #8f1838";>
+        <h3>Decent Work And Economic Growth</h3>
+        <p>Should there be more job oppurtunities?</p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 09.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #f36d25";>
+        <h3>Industry, Innovation And Infrastructure</h3>
+        <p>How do you spot oppurtunities for innovation?</p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 10.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #e11484";>
+        <h3>Reduced Inequalities</h3>
+        <p>How can we reduce the gap between the rich and the poor?</p>
+      </div>
+    </div>
+  </div>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 11.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #f99d26";>
+        <h3>Sustainable Cities And Communities</h3>
+        <p>How can we help sustain the city we live in?</p>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 12.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #cf8d2a";>
+        <h3>Responsible Consumption And Production</h3>
+        <p>How can we promote resource and energy efficiency?</p>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 13.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #48773e";>
+        <h3>Climate Action</h3>
+        <p>What can we do to prevent climate change?</p>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 14.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #007dbc";>
+        <h3>Life Below Water</h3>
+        <p>How can pollution in the water be prevented?</p>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 15.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #3eb049";>
+        <h3>Life On Land</h3>
+        <p>Why are trees essential?</p>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 16.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #02558b";>
+        <h3>Peace, Justice And Strong Institutions</h3>
+        <p>How can we stop corruption, bribery and theft?</p>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
+
+  </body>
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="images/photo 17.png" alt="avatar" style="width:300px; height:300px;"/> 
+    </div>
+
+      <div class="flip-box-back" style="background-color: #183668";>
+        <h3>Partnerships For The Goals</h3>
+        <p>How can help developing nations have access to internet connection?</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
