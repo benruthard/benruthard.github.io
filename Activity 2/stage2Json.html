@@ -9,15 +9,12 @@
 
 <script>
 
-	window.onload = function() {
-    if (window.jQuery) {  
-        // jQuery is loaded  
-        alert("Yeah!");
-    } else {
-        // jQuery is not loaded
-        alert("Doesn't Work");
-    }
-}
+var myData = "";
+var staticUrl = 'https://raw.githubusercontent.com/PMiskew/pmiskew.github.io/master/Activity%202/data/HIVinfection.json'; 
+
+$.getJSON(staticUrl, function(data) {
+        console.log(data)
+    });
 
 </script>
 
